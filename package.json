@@ -1,0 +1,30 @@
+{
+  "name": "go-ar",
+  "version": "1.0.0",
+  "description": "Sitema de realidade almentada",
+  "main": "index.js",
+  "author": "Jusan Magno",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "yarn dev",
+    "prod": "node src/index.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dimensions": "^1.3.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-viro": "^2.17.0"
+  }
+}

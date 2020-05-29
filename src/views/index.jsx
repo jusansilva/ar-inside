@@ -1,6 +1,5 @@
 import React from 'react';
-import Login from './login';
-import Manager from './Manager';
+import Manager from __dirname + './Manager';
 
 
 

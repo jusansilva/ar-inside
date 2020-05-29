@@ -1,13 +1,13 @@
 {
-  "name": "go-ar",
+  "name": "ar-inside",
   "version": "1.0.0",
-  "description": "Sitema de realidade almentada",
-  "main": "index.js",
+  "description": "Sitema de realidade aumentada",
+  "main": "src/index.js",
   "author": "Jusan Magno",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "yarn prod",
+    "start": "node src/index.js",
     "prod": "node src/index.js"
   },
   "dependencies": {

@@ -2,7 +2,7 @@
   "name": "ar-inside",
   "version": "1.0.0",
   "description": "Sitema de realidade aumentada",
-  "main": "src/index.js",
+  "main": "index.js",
   "author": "Jusan Magno",
   "license": "MIT",
   "scripts": {

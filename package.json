@@ -6,9 +6,9 @@
   "author": "Jusan Magno",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "prod": "node src/index.js"
+    "dev": "npm install && node src/index.js",
+    "start": "npm install && node src/index.js",
+    "prod": "npm install && node src/index.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.0",

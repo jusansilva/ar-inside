@@ -6,11 +6,12 @@
   "author": "Jusan Magno",
   "license": "MIT",
   "scripts": {
-    "dev": "npm install && node src/index.js",
-    "start": "npm install && node src/index.js",
-    "prod": "npm install && node src/index.js"
+    "dev": "sudo npm install && node src/index.js",
+    "start": "sudo npm install && node src/index.js",
+    "prod": "sudo npm install && node src/index.js"
   },
   "dependencies": {
+    "@babel/register": "^7.10.1",
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",

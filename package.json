@@ -2,11 +2,11 @@
   "name": "ar-inside",
   "version": "1.0.0",
   "description": "Sitema de realidade aumentada",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "author": "Jusan Magno",
   "license": "ISC",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/app.js"
   },
   "dependencies": {
     "@babel/register": "^7.10.1",

@@ -6,9 +6,9 @@
   "author": "Jusan Magno",
   "license": "MIT",
   "scripts": {
-    "dev": "sudo npm install && node src/index.js",
-    "start": "sudo npm install && node src/index.js",
-    "prod": "sudo npm install && node src/index.js"
+
+    "start": "sudo npm install && node index.js"
+
   },
   "dependencies": {
     "@babel/register": "^7.10.1",

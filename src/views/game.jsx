@@ -24,7 +24,7 @@ const GoAr = (props) => {
                 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
             </head>
             <body style={{margin : 0, overflow: 'hidden'}}>
-                <a-scene embedded arjs>
+                <a-scene embedded arjs='sourceType: webcam;'>
                     <a-marker type='barcode' value='5'>
                         <a-box position='0 0.5 0' material='color: blue;'></a-box>
                     </a-marker>

@@ -26,7 +26,7 @@ const GoAr = (props) => {
 
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <div style={{ width: width / 2, height: height / 2 }} >
-                    <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+                    <a-scene embedded arjs='sourceType: webcam;'>
                         <a-marker type='barcode' value='jusan'>
                             <a-box position='0 0.5 0' material='color: blue;'></a-box>
                         </a-marker>

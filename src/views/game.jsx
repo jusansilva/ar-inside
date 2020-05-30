@@ -20,17 +20,16 @@ const GoAr = (props) => {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
                 {/* Icons to support Material Design  */}
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-                <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-                <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+                <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+                <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
             </head>
-
-            <body style={{ margin: 0, overflow: 'hidden' }}>
-                    <a-scene embedded arjs='sourceType: webcam;'>
-                        <a-marker type='barcode' value='5'>
-                            <a-box position='0 0.5 0' material='color: blue;'></a-box>
-                        </a-marker>
-                    </a-scene>
+            <body style={{margin : 0, overflow: 'hidden'}}>
+                <a-scene embedded arjs>
+                    <a-marker type='barcode' value='5'>
+                        <a-box position='0 0.5 0' material='color: blue;'></a-box>
+                    </a-marker>
                     <a-entity camera></a-entity>
+                </a-scene>
             </body>
         </>
     );

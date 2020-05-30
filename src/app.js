@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/login', (req, res) =>{
-    res.render('login', {title: 'Login'});
+    res.render('Login', {title: 'Login'});
 });
 
 app.post('/logar', (req, res) => {
@@ -23,7 +23,7 @@ app.post('/logar', (req, res) => {
 })
 
 app.get('/cadastrar', (req, res) =>{
-    res.render('cadastrar', {title: 'Cadastrar'});
+    res.render('Cadastrar', {title: 'Cadastrar'});
 });
 
 

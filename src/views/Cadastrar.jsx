@@ -141,11 +141,11 @@ const Cadastrar = (props) => {
                     <div className="second-colum" style={theme.secondCollumn}>
                         <h2 className="title" style={theme.title2}>Criar uma Conta</h2>
                         <p className="description" style={theme.description2}>Cadastre com seu email</p>
-                        <form className="form" style={theme.form}>
+                        <form action="auth/registrar" className="form" style={theme.form}>
                             <input type="text" className="name" placeholder="digite seu nome" style={theme.input} />
                             <input type="email" className="email" placeholder="digite seu email" style={theme.input} />
                             <input type="password" className="password" placeholder="digite sua Senha" style={theme.input} />
-                            <input type="password" className="password" placeholder="Confirme sua senha" style={theme.input} />
+                            <input type="password" className="passwordconfirm" placeholder="Confirme sua senha" style={theme.input} />
                             <button className="btn" style={theme.btn2}>Cadastrar</button>
                         </form>
                     </div>

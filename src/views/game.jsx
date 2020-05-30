@@ -18,8 +18,6 @@ const GoAr = (props) => {
                 <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
                 {/* Fonts to support Material Design  */}
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-                {/* Icons to support Material Design  */}
-                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
                 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
                 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
             </head>

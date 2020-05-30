@@ -1,9 +1,16 @@
 const Express = require('express');
 const path = require('path');
 const { createEngine } = require('express-react-views');
+const bodyParse = require('body-parser');
+
+
 
 
 const app = new Express();
+
+app.use(bodyParse.json())
+app.use(bodyParse.urlencoded({extended: false}))
+require('./controllers')(app);
 
 app.set('views',__dirname + '/views');
 app.set('view engine', 'jsx');
@@ -14,17 +21,6 @@ app.get('/', (req, res) => {
     res.render('index', { name: 'John', title: 'Jusan Magno' });
 });
 
-app.get('/login', (req, res) =>{
-    res.render('Login', {title: 'Login'});
-});
-
-app.post('/logar', (req, res) => {
-
-})
-
-app.get('/cadastrar', (req, res) =>{
-    res.render('Cadastrar', {title: 'Cadastrar'});
-});
 
 
 app.get('/game', (req, res) => {

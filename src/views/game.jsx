@@ -44,7 +44,7 @@ const GoAr = (props) => {
                     </a-marker>
                     <a-marker preset="hiro">
 
-                        <a-entity
+                        <a-entity scale="3 3 3"
                             obj-model="obj: url(/covid.obj); 
                                         mtl: url(/covid.mlt)">
                         </a-entity>

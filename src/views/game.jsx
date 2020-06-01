@@ -25,7 +25,7 @@ const GoAr = (props) => {
 
             </head>
             <body style={{ margin: 0, overflow: 'hidden' }}>
-                <a-scene embedded arjs='sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+                <a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
                     <a-marker type="pattern" preset="custom" url="/marker.patt">
 
@@ -45,6 +45,7 @@ const GoAr = (props) => {
                     <a-marker preset="hiro">
 
                         <a-entity scale="0.1 0.1 0.1"
+                            position="100 100 0"
                             obj-model="obj: url(/covid.obj); 
                                         mtl: url(/covid.mlt)">
                         </a-entity>

@@ -1,5 +1,3 @@
-# This file uses centimeters as units for non-parametric coordinates.
-
 mtllib Totem-CovidZero2-OBJ.mtl
 g default
 v -1.810925 -10.170512 2.398251

@@ -2,8 +2,6 @@ const Express = require('express');
 const path = require('path');
 const { createEngine } = require('express-react-views');
 const bodyParse = require('body-parser');
-const carro = require('./obj/carro/bugatti.obj');
-const textura = require('./obj/carro/bugatti.mtl');
 
 
 const app = new Express();
@@ -29,14 +27,6 @@ app.get('/ar-inside', (req, res) => {
 
 app.get('/ar-inside-box', (req, res) => {
     res.render('box', {title: 'Ar Inside Box'})
-})
-
-app.get('/obj/carro/bugatti.obj', (req, res) => {
-    res.send(carro);
-})
-
-app.get('/obj/carro/bugatti.mtl', (req, res) => {
-    res.send(textura);
 })
 
 

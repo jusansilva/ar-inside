@@ -1,5 +1,7 @@
 import React from 'react';
 import Dimension from 'react-dimensions';
+import carro from '../obj/carro/bugatti.obj';
+import textura from '../obj/carro/bugatti.mtl'
 
 const width = Dimension.width;
 const height = Dimension.height;
@@ -28,8 +30,8 @@ const GoAr = (props) => {
 
                     <a-marker preset='hiro'>
                         <a-assets>
-                            <a-asset-item id="carro-obj" src="/obj/carro/bugatti.obj"></a-asset-item>
-                            <a-asset-item id="carro-mtl" src="/obj/carro/bugatti.mtl"></a-asset-item>
+                            <a-asset-item id="carro-obj" src={carro}></a-asset-item>
+                            <a-asset-item id="carro-mtl" src={textura}></a-asset-item>
                         </a-assets>
                         <a-entity obj-model="obj: #carro-obj; mtl: #carro-mtl"></a-entity>
                     </a-marker>

@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/game', (req, res) => {
-    res.render('game', {title: 'O local'})
+    res.render('game', {title: 'Inside Ar'})
 })
 
 app.listen(3000, () =>{

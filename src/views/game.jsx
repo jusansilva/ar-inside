@@ -1,7 +1,8 @@
 import React from 'react';
 import Dimension from 'react-dimensions';
-import carro from '../obj/carro/bugatti.obj';
-import textura from '../obj/carro/bugatti.mtl'
+import covid from '../obj/carro/covid.obj';
+import textura from '../obj/carro/covid.mtl';
+import marker from '../obj/mark/marker.patt';
 
 const width = Dimension.width;
 const height = Dimension.height;
@@ -26,11 +27,11 @@ const GoAr = (props) => {
 
             </head>
             <body style={{ margin: 0, overflow: 'hidden' }}>
-                <a-scene embedded arjs='sourceType: webcam;'>
+                <a-scene embedded arjs='sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-                    <a-marker preset='hiro'>
+                    <a-marker type="pattern" preset="custom" url={marker}>
                         <a-assets>
-                            <a-asset-item id="carro-obj" src={carro}></a-asset-item>
+                            <a-asset-item id="carro-obj" src={covid}></a-asset-item>
                             <a-asset-item id="carro-mtl" src={textura}></a-asset-item>
                         </a-assets>
                         <a-entity obj-model="obj: #carro-obj; mtl: #carro-mtl"></a-entity>

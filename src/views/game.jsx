@@ -34,6 +34,21 @@ const GoAr = (props) => {
                                         mtl: url(/covid.mlt)">
                         </a-entity>
                     </a-marker>
+
+                    <a-marker type="barcode" value="ar-inside" >
+
+                        <a-entity
+                            obj-model="obj: url(/covid.obj); 
+                                        mtl: url(/covid.mlt)">
+                        </a-entity>
+                    </a-marker>
+                    <a-marker preset="hiro">
+
+                        <a-entity
+                            obj-model="obj: url(/covid.obj); 
+                                        mtl: url(/covid.mlt)">
+                        </a-entity>
+                    </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>
             </body >

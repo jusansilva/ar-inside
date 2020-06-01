@@ -18,13 +18,19 @@ const GoAr = (props) => {
                 <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
                 {/* Fonts to support Material Design  */}
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-                <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-                <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+                <script src="https://aframe.io/releases/0.6.1/aframe.min.js"> </script>
+                <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"> </script>
+                <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
             </head>
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <a-scene embedded arjs='sourceType: webcam;'>
                     <a-marker preset='hiro'>
                         <a-box position='0 0.5 0' material='color: red;'></a-box>
+
+                        <a-entity
+                            gltf-model-next="src: url(https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Duck/glTF/Duck.gltf);"
+                        >
+                        </a-entity>
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>

@@ -26,8 +26,8 @@ const GoAr = (props) => {
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <a-scene embedded arjs='sourceType: webcam;'>
                     <a-assets>
-                        <a-asset-item id="carro-obj" src="../obj/carro/bugatti.obj"></a-asset-item>
-                        <a-asset-item id="carro-mtl" src="../obj/carro/bugatti.mtl"></a-asset-item>
+                        <a-asset-item id="carro-obj" src="/obj/carro/bugatti.obj"></a-asset-item>
+                        <a-asset-item id="carro-mtl" src="/obj/carro/bugatti.mtl"></a-asset-item>
                     </a-assets>
                     <a-marker preset='hiro'>
                         <a-entity obj-model="obj: #carro-obj; mtl: #carro-mtl"></a-entity>

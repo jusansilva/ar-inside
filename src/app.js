@@ -27,6 +27,16 @@ app.get('/ar-inside', (req, res) => {
     res.render('game', {title: 'Ar Inside'})
 })
 
+app.get('/obj/carro/bugatti.obj', (req, res) => {
+    res.send("/obj/carro/bugatti.obj");
+})
+
+app.get('/obj/carro/bugatti.mtl', (req, res) => {
+    res.send("/obj/carro/bugatti.mtl");
+})
+
+
+
 app.listen(3000, () =>{
     console.log('Rodando');
 })

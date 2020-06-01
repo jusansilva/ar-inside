@@ -37,7 +37,7 @@ app.get('/covid.obj', (req, res) => {
     res.sendFile(__dirname + '/obj/carro/covid.obj');
 })
 
-app.get('/covid.mlt', (req, res) => {
+app.get('/covid.mtl', (req, res) => {
     res.sendFile(__dirname + '/obj/carro/covid.mtl');
 })
 

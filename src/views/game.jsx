@@ -27,11 +27,11 @@ const GoAr = (props) => {
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <a-scene embedded arjs='sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-                    <a-marker type="pattern" preset="custom" url="https://github.com/jusansilva/ar-inside/blob/master/src/obj/mark/marker.patt">
+                    <a-marker type="pattern" preset="custom" url="/marker.patt">
 
                         <a-entity
-                            obj-model="obj: url(https://github.com/jusansilva/ar-inside/blob/master/src/obj/carro/covid.obj); 
-                                        mtl: url(https://github.com/jusansilva/ar-inside/blob/master/src/obj/carro/covid.mtl)">
+                            obj-model="obj: url(/covid.obj); 
+                                        mtl: url(/covid.mlt)">
                         </a-entity>
                     </a-marker>
                     <a-entity camera></a-entity>

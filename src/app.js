@@ -29,7 +29,17 @@ app.get('/ar-inside-box', (req, res) => {
     res.render('box', {title: 'Ar Inside Box'})
 })
 
+app.get('/marker.patt', (req, res) => {
+    res.sendFile(__dirname + '/obj/mark/marker.patt');
+})
 
+app.get('/covid.obj', (req, res) => {
+    res.sendFile(__dirname + '/obj/carro/covid.obj');
+})
+
+app.get('/covid.mlt', (req, res) => {
+    res.sendFile(__dirname + '/obj/carro/covid.mtl');
+})
 
 app.listen(3000, () =>{
     console.log('Rodando');

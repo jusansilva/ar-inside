@@ -27,6 +27,10 @@ app.get('/ar-inside', (req, res) => {
     res.render('game', {title: 'Ar Inside'})
 })
 
+app.get('/ar-inside-box', (req, res) => {
+    res.render('box', {title: 'Ar Inside Box'})
+})
+
 app.get('/obj/carro/bugatti.obj', (req, res) => {
     res.send(carro);
 })

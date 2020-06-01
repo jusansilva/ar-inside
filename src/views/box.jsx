@@ -11,11 +11,9 @@ const Box = (props) => {
         <>
             <head>
                 <title>{props.title}</title>
-                <meta charset="utf-8" />
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
                 <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
                 <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
-                <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js" crossorigin="anonymous"></script>
                 <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
                 {/* Fonts to support Material Design  */}
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -27,7 +25,7 @@ const Box = (props) => {
                 <a-scene embedded arjs='sourceType: webcam;'>
 
                     <a-marker preset='hiro'>
-                        <a-box  position='0 5 0' material='opacity: 0.5;color: blue'></a-box>
+                        <a-box  position='0 0 -1' material='opacity: 0.5;color: blue'></a-box>
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>

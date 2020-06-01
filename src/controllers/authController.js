@@ -2,7 +2,7 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const token = require('jsonwebtoken');
 
-const authConfig = require('../../config/auth.json')
+const authConfig = require('../config/auth.json')
 
 const connection = require('../database/index');
 const User = require('../model/User');

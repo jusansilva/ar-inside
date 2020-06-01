@@ -27,7 +27,7 @@ const Box = (props) => {
                 <a-scene embedded arjs='sourceType: webcam;'>
 
                     <a-marker preset='hiro'>
-                        <a-box position='0 0.1 0' material='opacity: 0.5;color: blue'></a-box>
+                        <a-box position='0 0 0' material='opacity: 0.5;color: blue'></a-box>
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>

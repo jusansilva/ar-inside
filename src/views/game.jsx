@@ -25,16 +25,16 @@ const GoAr = (props) => {
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <a-scene embedded arjs='sourceType: webcam;'>
                     <a-marker preset='hiro'>
-                        <a-box position='0 0.5 0' material='color: red;'></a-box>
+
 
                         <a-entity
-                            gltf-model-next="src: url(https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Duck/glTF/Duck.gltf);"
-                        >
+                            obj-model="obj: url(../obj/carro/bugatti.obj);  mtl: url(../obj/carro/bugatti.mtl)">
+                            >
                         </a-entity>
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>
-            </body>
+            </body >
         </>
     );
 }

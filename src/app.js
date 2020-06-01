@@ -10,7 +10,7 @@ const app = new Express();
 
 app.use(bodyParse.json())
 app.use(bodyParse.urlencoded({extended: false}))
-require('./controllers')(app);
+// require('./controllers')(app);
 
 app.set('views',__dirname + '/views');
 app.set('view engine', 'jsx');
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/game', (req, res) => {
+app.get('/ar-inside', (req, res) => {
     res.render('game', {title: 'Inside Ar'})
 })
 

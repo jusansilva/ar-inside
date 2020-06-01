@@ -1,8 +1,6 @@
 import React from 'react';
 import Dimension from 'react-dimensions';
-import covid from '../obj/carro/covid.obj';
-import textura from '../obj/carro/covid.mtl';
-import marker from '../obj/mark/marker.patt';
+
 
 const width = Dimension.width;
 const height = Dimension.height;
@@ -29,12 +27,12 @@ const GoAr = (props) => {
             <body style={{ margin: 0, overflow: 'hidden' }}>
                 <a-scene embedded arjs='sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-                    <a-marker type="pattern" preset="custom" url={marker}>
-                        <a-assets>
-                            <a-asset-item id="carro-obj" src={covid}></a-asset-item>
-                            <a-asset-item id="carro-mtl" src={textura}></a-asset-item>
-                        </a-assets>
-                        <a-entity obj-model="obj: #carro-obj; mtl: #carro-mtl"></a-entity>
+                    <a-marker type="pattern" preset="custom" url="https://github.com/jusansilva/ar-inside/blob/master/src/obj/mark/marker.patt">
+
+                        <a-entity
+                            obj-model="obj: url(https://github.com/jusansilva/ar-inside/blob/master/src/obj/carro/covid.obj); 
+                                        mtl: url(https://github.com/jusansilva/ar-inside/blob/master/src/obj/carro/covid.mtl)">
+                        </a-entity>
                     </a-marker>
                     <a-entity camera></a-entity>
                 </a-scene>

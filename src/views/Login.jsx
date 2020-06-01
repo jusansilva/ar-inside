@@ -136,7 +136,7 @@ const Login = (props) => {
                         <h2 className="title" style={theme.title}>Manager</h2>
                         <p className="description" style={theme.description}>Você ainda não tem um usuário?</p>
                         <p className="description" style={theme.description}>Cadastre aqui aqui</p>
-                        <button className="btn" style={theme.btn}><a href="/cadastrar" style={{textDecoration: 'none', textDecorationColor: '#000'}}>Cadastrar</a></button>
+                        <button className="btn" style={theme.btn}><a href="/auth/cadastrar" style={{textDecoration: 'none', textDecorationColor: '#000'}}>Cadastrar</a></button>
                     </div>
                     <div className="second-colum" style={theme.secondCollumn}>
                         <h2 className="title" style={theme.title2}>Logar na Sua Conta</h2>

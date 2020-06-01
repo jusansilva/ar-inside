@@ -136,7 +136,7 @@ const Cadastrar = (props) => {
                         <h2 className="title" style={theme.title}>Manager</h2>
                         <p className="description" style={theme.description}>Você já tem um usuário?</p>
                         <p className="description" style={theme.description}>Logue aqui</p>
-                        <button className="btn" onClick={() => setCount(1)} style={theme.btn}><a href="/login" style={{textDecoration: 'none', textDecorationColor: 'black'}}>Logar</a></button>
+                        <button className="btn" onClick={() => setCount(1)} style={theme.btn}><a href="/auth/login" style={{textDecoration: 'none', textDecorationColor: 'black'}}>Logar</a></button>
                     </div>
                     <div className="second-colum" style={theme.secondCollumn}>
                         <h2 className="title" style={theme.title2}>Criar uma Conta</h2>

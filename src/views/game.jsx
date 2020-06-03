@@ -31,7 +31,7 @@ const GoAr = (props) => {
 
                         <a-entity
                             obj-model="obj: url(/covid.obj); 
-                                        mtl: url(/covid.mlt)">
+                                        mtl: url(/covid.mtt)">
                         </a-entity>
                     </a-marker>
 

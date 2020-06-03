@@ -47,7 +47,7 @@ const GoAr = (props) => {
                         <a-entity scale="0.1 0.1 0.1"
                             position="0 0.5 0"
                             obj-model="obj: url(/covid.obj); 
-                                        mtl: url(/covid.mlt)">
+                                        mtl: url(/covid.mtl)">
                         </a-entity>
                     </a-marker>
                     <a-entity camera></a-entity>
